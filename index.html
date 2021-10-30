@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/oz-courses-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    
+    <!---- MAIN WRAPPER ------->
+    <div class="oz_courses_selector_wrapper">
+
+        <div class="oz_courses_container">
+
+            <div class="oz_courses_step_indicator_text"><h1>Select a course from a category</h1></div>
+
+            <!------ TABS ------>
+            <div class="oz_courses_tabs_wrapper">
+
+                <!----------PROGRESS INDICATOR ------------>
+                <div class="oz_courses_steps_progress">
+                    <button class="oz_courses_step_button oz_courses_step_1_button active">1</button>
+                    <button class="oz_courses_step_button oz_courses_step_2_button">2</button>
+                    <button class="oz_courses_step_button oz_courses_step_3_button">3</button>
+                    <button class="oz_courses_step_button oz_courses_step_4_button">4</button>
+                    <button class="oz_courses_step_button oz_courses_step_5_button">5</button>
+                    <button class="oz_courses_step_button oz_courses_step_6_button">6</button>
+
+                    <div class="oz_courses_step_button_description">
+                        <p>Select category</p>
+                        <p>Kind of course</p>
+                        <p>Select dates</p>
+                        <p>Number of students</p>
+                        <p>Billing</p>
+                        <p>Overview</p>
+                    </div>
+
+                    <div class="oz_courses_steps_progress_bar"></div>
+
+                </div>
+                <!----- END PROGRESS INDICATOR ------------>
+
+                <!----- TABS ---->
+                <div class="oz_courses_inner_tabs_wrapper">
+                    <div class="oz_courses_inner_tab">
+                        <!-----STEP 1 CARDS (DATA FETCHED FROM API)----->
+                        <div class="oz_courses_step_1_category_cards">
+                            
+                            <div class="oz_courses_step_1_category_card" data-category="categorynamehere">
+                                <div class="category_left_icon">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <h5>Course category 1 name</h5>
+                                <div class="category_right_icons">
+                                    <i class="fas fa-check"></i>
+                                    <i class="fas fa-chevron-right"></i>
+                                </div>
+                            </div> 
+                            
+                            <div class="oz_courses_step_1_category_card" data-category="categorynamehere">
+                                <div class="category_left_icon">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <h5>Course category 2 name</h5>
+                                <div class="category_right_icons">
+                                    <i class="fas fa-check"></i>
+                                    <i class="fas fa-chevron-right"></i>
+                                </div>
+                            </div> 
+                            
+                            <div class="oz_courses_step_1_category_card" data-category="categorynamehere">
+                                <div class="category_left_icon">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                                <h5>Course category 3 name</h5>
+                                <div class="category_right_icons">
+                                    <i class="fas fa-check"></i>
+                                    <i class="fas fa-chevron-right"></i>
+                                </div>
+                            </div> 
+                            
+
+                        </div>
+                        <!-----END STEP 1 CARDS (DATA FETCHED FROM API)----->
+                    </div>
+
+                    <div class="oz_courses_inner_tab">
+                        <!-- STEP 2 CARDS - FETCH DATA BASED ON THE OPTIONS SELECTED IN STEP 1 ----->
+                        <div class="oz_courses_step_2_course_cards">
+
+                            <div class="oz_courses_step_2_course_card">
+                                <div class="oz_courses_step_2_course_card_left">
+                                    <h2>Course name</h2>
+                                    <div class="oz_courses_step_2_course_card_price_tag">
+                                        <span class="oz_courses_drop_cap">€</span> 124
+                                    </div>
+                                </div>
+                                <div class="oz_courses_step_2_course_card_right">
+                                    <div class="oz_courses_step_2_course_card_right_inner">
+                                        <i class="fas fa-check"></i>
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="oz_courses_step_2_course_card">
+                                <div class="oz_courses_step_2_course_card_left">
+                                    <h2>Course name</h2>
+                                    <div class="oz_courses_step_2_course_card_price_tag">
+                                        <span class="oz_courses_drop_cap">€</span> 124
+                                    </div>
+                                </div>
+                                <div class="oz_courses_step_2_course_card_right">
+                                    <div class="oz_courses_step_2_course_card_right_inner">
+                                        <i class="fas fa-check"></i>
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="oz_courses_step_2_course_card">
+                                <div class="oz_courses_step_2_course_card_left">
+                                    <h2>Course name</h2>
+                                    <div class="oz_courses_step_2_course_card_price_tag">
+                                        <span class="oz_courses_drop_cap">€</span> 124
+                                    </div>
+                                </div>
+                                <div class="oz_courses_step_2_course_card_right">
+                                    <div class="oz_courses_step_2_course_card_right_inner">
+                                        <i class="fas fa-check"></i>
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="oz_courses_step_2_course_card">
+                                <div class="oz_courses_step_2_course_card_left">
+                                    <h2>Course name</h2>
+                                    <div class="oz_courses_step_2_course_card_price_tag">
+                                        <span class="oz_courses_drop_cap">€</span> 124
+                                    </div>
+                                </div>
+                                <div class="oz_courses_step_2_course_card_right">
+                                    <div class="oz_courses_step_2_course_card_right_inner">
+                                        <i class="fas fa-check"></i>
+                                        <i class="fas fa-chevron-right"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <p>Language preference</p>
+                        <div class="oz_courses_step_2_language_options">
+                            <div>
+                                <label>Dutch</label>
+                                <input type="checkbox" name="oz-courses-language-dutch">
+                            </div>
+
+                            <div>
+                                <label>English</label>
+                                <input type="checkbox" name="oz-courses-language-english">
+                            </div>
+
+                        </div>
+                        <!-- END STEP 2 CARDS - FETCH DATA BASED ON THE OPTIONS SELECTED IN STEP 1-->
+                    </div>
+
+                    <div class="oz_courses_inner_tab">
+                        <!--- STEP 3 - SELECT DATES FROM TABLE ------>
+                        <div class="oz_courses_step_3">
+                            <!--- date selection options -->
+                            <div class="oz_courses_input_group">
+                                <div class="oz_courses_input_group_inner">
+                                    <label>Number of students</label>
+                                    <input type="number" name="oz-courses-number-of-students" placeholder="Enter number of students">
+                                </div>
+                                <div class="oz_courses_input_group_inner"></div>
+                                <div class="oz_courses_input_group_inner"></div>
+                            </div>
+                            
+                            <div class="oz_courses_input_group">
+
+                                <div class="oz_courses_input_group_inner">
+                                    <label>Select prefered location</label>
+                                    <select name="" id="">
+                                        <option selected value="">Location</option>
+                                        <option value="">Amsterdam</option>
+                                        <option value="">Ede</option>
+                                        <option value="">Zwolle</option>
+                                    </select>
+                                </div>
+
+                                <div class="oz_courses_input_group_inner">
+                                    <label>Select day of the week</label>
+                                    <select name="" id="">
+                                        <option selected value="">Day</option>
+                                        <option value="">Monday</option>
+                                        <option value="">Tuesday</option>
+                                        <option value="">Wednesday</option>
+                                        <option value="">Thursday</option>
+                                        <option value="">Friday</option>
+                                    </select>
+                                </div>
+
+                                <div class="oz_courses_input_group_inner">
+                                    <label>Period starting</label>
+                                    <input type="date">
+                                </div>
+
+                                <div class="oz_courses_input_group_inner">
+                                    <label>Period ending</label>
+                                    <input type="date">
+                                </div>
+
+                            </div>
+
+                            <!-- end date selection options -->
+
+                            <!--- table ------>
+                            <div class="oz_courses_step_3_dates_table">
+                                <table class="oz_courses_table_striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Price</th>
+                                            <th>Available spots</th>
+                                            <th>Date</th>
+                                            <th>Time</th>
+                                            <th>Location</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr>
+                                            <td>€124</td>
+                                            <td>5</td>
+                                            <td>22-11-2021</td>
+                                            <td>8: 30 - 15: 30</td>
+                                            <td>Amsterdam</td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td>€124</td>
+                                            <td>5</td>
+                                            <td>22-11-2021</td>
+                                            <td>8: 30 - 15: 30</td>
+                                            <td>Amsterdam</td>
+                                        </tr>
+                                        <tr>
+                                            <td>€124</td>
+                                            <td>5</td>
+                                            <td>22-11-2021</td>
+                                            <td>8: 30 - 15: 30</td>
+                                            <td>Amsterdam</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                            <!--- end table -->
+                        </div>
+                        <!--- END STEP 3 - SELECT DATES FROM TABLE -->
+                    </div>
+
+                    <div class="oz_courses_inner_tab">
+                        <h2>You have entered <span class="text--secondary">2</span> students</h2>
+
+                        <div class="oz_courses_step_4_cards">
+                            <!-- student details card -->
+                            <div class="oz_courses_step_4_card">
+                                <!-- card title section -->
+                                <div class="oz_courses_step_4_card_title">
+                                    <div class="oz_courses_step_4_card_title_left">
+                                        <h4><span class="oz_courses_text--secondary oz_courses_drop_cap">#1</span> Enter student <span class="oz_courses_text--secondary">1</span> details</h4>
+                                    </div>
+                                    <div class="oz_courses_step_4_card_title_right">
+                                        <button class="oz_courses_btn oz_courses_btn_secondary oz_courses_expand_student_details_form">Edit</button>
+                                        <button class="oz_courses_btn oz_courses_btn_danger oz_courses_delete_student_details_form">Delete</button>
+                                    </div>
+                                </div>
+                                <!-- end card title section--->
+                                <!-- card form ------->
+                                <div class="oz_courses_step_4_student_details_form">
+
+                                    <div class="oz_courses_input_group">
+                                        <div class="oz_courses_input_group_inner">
+                                            <label>First name</label>
+                                            <input type="text" name="oz_courses_step_4_student_firstname">
+                                        </div>
+                                        
+                                        <div class="oz_courses_input_group_inner">
+                                            <label>Middle name</label>
+                                            <input type="text" name="oz_courses_step_4_student_middlename">
+                                        </div>
+                                        <div class="oz_courses_input_group_inner">
+                                            <label>Last name</label>
+                                            <input type="text" name="oz_courses_step_4_student_lastname">
+                                        </div>
+                                    </div>
+
+                                    <div class="oz_courses_input_group">
+                                        <div class="oz_courses_input_group_inner">
+                                            <label>Phone number</label>
+                                            <input type="text" name="oz_courses_step_4_student_phone">
+                                        </div>
+                                        <div class="oz_courses_input_group_inner">
+                                            <label>Email</label>
+                                            <input type="email" name="oz_courses_step_4_student_email">
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="oz_courses_input_group">
+
+                                        <div class="oz_courses_input_group_inner">
+                                            <label>Gender</label>
+                                        </div>
+                                        <br>
+                                        
+                                        <div class="oz_courses_input_group_inner">
+                                            <input type="radio" checked name="oz_courses_student_1_gender">
+                                            <label>Rather not say</label>
+                                        </div>
+                                        <div class="oz_courses_input_group_inner">
+                                            <input type="radio" name="oz_courses_student_1_gender">
+                                            <label>Male</label>
+                                        </div>
+                                        <div class="oz_courses_input_group_inner">
+                                            <input type="radio" name="oz_courses_student_1_gender">
+                                            <label>Female</label>
+                                        </div>
+                                        <div class="oz_courses_input_group_inner"></div>
+                                        <div class="oz_courses_input_group_inner"></div>
+                                        <div class="oz_courses_input_group_inner"></div>
+                                    </div>
+
+                                    <div class="oz_courses_input_group">
+                                        <div class="oz_courses_input_group_inner">
+                                            <label>Additional details</label>
+                                            <textarea id="" cols="30" rows="10" name="oz_courses_student_additional_details"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <button class="oz_courses_btn oz_courses_btn_secondary oz_courses_step_4_student_details_form_save_button">Save student</button>
+                                </div>
+                                <!-- end card form --->
+                            </div>
+                            <!--- end student details card -->
+                            <!-- student details card -->
+                            <div class="oz_courses_step_4_card">
+                                <!-- card title section -->
+                                <div class="oz_courses_step_4_card_title">
+                                    <div class="oz_courses_step_4_card_title_left">
+                                        <h4><span class="oz_courses_text--secondary oz_courses_drop_cap">#2</span> Enter student <span class="oz_courses_text--secondary">2</span> details</h4>
+                                    </div>
+                                    <div class="oz_courses_step_4_card_title_right">
+                                        <button class="oz_courses_btn oz_courses_btn_secondary oz_courses_expand_student_details_form">Edit</button>
+                                        <button class="oz_courses_btn oz_courses_btn_danger oz_courses_delete_student_details_form">Delete</button>
+                                    </div>
+                                </div>
+                                <!-- end card title section--->
+                                <!-- card form ------->
+                                <div class="oz_courses_step_4_student_details_form">
+
+                                    <div class="oz_courses_input_group">
+                                        <div class="oz_courses_input_group_inner">
+                                            <label>First name</label>
+                                            <input type="text" name="oz_courses_step_4_student_firstname">
+                                        </div>
+                                        
+                                        <div class="oz_courses_input_group_inner">
+                                            <label>Middle name</label>
+                                            <input type="text" name="oz_courses_step_4_student_middlename">
+                                        </div>
+                                        <div class="oz_courses_input_group_inner">
+                                            <label>Last name</label>
+                                            <input type="text" name="oz_courses_step_4_student_lastname">
+                                        </div>
+                                    </div>
+
+                                    <div class="oz_courses_input_group">
+                                        <div class="oz_courses_input_group_inner">
+                                            <label>Phone number</label>
+                                            <input type="text" name="oz_courses_step_4_student_phone">
+                                        </div>
+                                        <div class="oz_courses_input_group_inner">
+                                            <label>Email</label>
+                                            <input type="email" name="oz_courses_step_4_student_email">
+                                        </div>
+                                    </div>
+
+
+                                    <div class="oz_courses_input_group">
+                                        <div class="oz_courses_input_group_inner">
+                                            <label>Gender</label>
+                                        </div>
+                                        <br>
+                                        <div class="oz_courses_input_group_inner">
+                                            <input type="radio" checked name="oz_courses_student_2_gender">
+                                            <label>Rather not say</label>
+                                        </div>
+                                        <div class="oz_courses_input_group_inner">
+                                            <input type="radio" name="oz_courses_student_2_gender">
+                                            <label>Male</label>
+                                        </div>
+                                        <div class="oz_courses_input_group_inner">
+                                            <input type="radio" name="oz_courses_student_2_gender">
+                                            <label>Female</label>
+                                        </div>
+                                        <div class="oz_courses_input_group_inner"></div>
+                                        <div class="oz_courses_input_group_inner"></div>
+                                        <div class="oz_courses_input_group_inner"></div>
+                                    </div>
+
+                                    <div class="oz_courses_input_group">
+                                        <div class="oz_courses_input_group_inner">
+                                            <label>Additional details</label>
+                                            <textarea id="" cols="30" rows="10" name="oz_courses_student_additional_details"></textarea>
+                                        </div>
+                                    </div>
+
+                                    <button class="oz_courses_btn oz_courses_btn_secondary oz_courses_step_4_student_details_form_save_button">Save student</button>
+                                </div>
+                                <!-- end card form --->
+                            </div>
+                            <!--- end student details card -->
+                            
+
+                        </div>
+                    </div>
+
+                    <div class="oz_courses_inner_tab">
+                        <div class="oz_courses_step_5_billing_info_form">
+                            <!-- type of entity -->
+                            <div class="oz_courses_step_5_billing_info_entity">
+                                <div class="oz_courses_step_5_billing_info_business_entity">
+                                    
+                                    <div class="oz_courses_input_group entity_company">
+                                        <div class="oz_courses_input_group_inner">
+                                            <label>Company name</label>
+                                            <input type="text">
+                                        </div>
+                                    </div>
+                            
+                                    <div class="oz_courses_input_group">
+                                        <div class="oz_courses_input_group_inner">
+                                            <label>Street name</label>
+                                            <input type="text">
+                                        </div>
+                                        <div class="oz_courses_input_group_inner">
+                                            <label>House number</label>
+                                            <input type="text">
+                                        </div>
+                                        <div class="oz_courses_input_group_inner">
+                                            <label>Postal code</label>
+                                            <input type="text">
+                                        </div>
+                                        <div class="oz_courses_input_group_inner">
+                                            <label>Venue</label>
+                                            <input type="text">
+                                        </div>
+                                    </div>
+
+                                    <h6>Mailing address</h6>
+
+                                    <div class="oz_courses_input_group">
+                                        <div class="oz_courses_input_group_inner">
+                                            <label>Click to toggle (same as above address OR specify new address)</label>
+                                            <input type="checkbox" name="oz_courses_specify_postal_address">
+                                            <p>Selected : <strong id="postalAddressOption">Use same address as above</strong></p>
+                                        </div>
+                                    </div>
+
+                                    <div class="oz_courses_input_group specify_postal_address">
+                                        <div class="oz_courses_input_group_inner">
+                                            <label>Specify postal address</label>
+                                            <input type="text">
+                                        </div>
+                                        <div class="oz_courses_input_group_inner"></div>
+                                        <div class="oz_courses_input_group_inner"></div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <!-- end type of entity-->
+
+                            <!-- contact -->
+                            <div class="oz_courses_step_5_billing_info_contact_details">
+                                <h3>Contact</h3>
+
+                                <div class="oz_courses_input_group">
+                                    <div class="oz_courses_input_group_inner">
+                                        <input type="radio" checked name="oz_courses_student_gender">
+                                        <label>Mr</label>
+                                    </div>
+                                    <div class="oz_courses_input_group_inner">
+                                        <input type="radio" name="oz_courses_student_gender">
+                                        <label>Madam</label>
+                                    </div>
+                                    <div class="oz_courses_input_group_inner">
+                                        <label>Last name</label>
+                                        <input type="text">
+                                    </div>
+                                </div>
+
+                                <div class="oz_courses_input_group">
+                                    <div class="oz_courses_input_group_inner">
+                                        <label>Phone number</label>
+                                        <input type="number">
+                                    </div>
+                                    <div class="oz_courses_input_group_inner">
+                                        <label>Email address</label>
+                                        <input type="email">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end contact --->
+                            <strong class="oz_courses_text--secondary">Click Next button below to proceed</strong>
+                        </div>
+                    </div>
+
+                    <div class="oz_courses_inner_tab">
+                        <div class="oz_courses_step_6_overview">
+                            <h2>Selected course details</h2>
+                            <p>Course name: <strong>Name</strong></p>
+                            <p>Price: <span class="oz_courses_drop_cap">€</span> 124</span></p>
+                            <h3>Students</h3>
+                            <ul>
+                                <li><strong><span class="oz_courses_text--secondary">#1</span> Mary J Blidge</strong></li>
+                                <li><strong><span class="oz_courses_text--secondary">#2</span> Rick M Sanchez</strong></li>
+                            </ul>
+                            
+
+                            <button class="oz_courses_btn oz_courses_btn_right oz_courses_btn_secondary">SUBMIT</button>
+
+                        </div>
+                    </div>
+                </div>
+                <!--- END TABS -->
+
+                <div class="oz_courses_tabs_direction_controls">
+                    <button class="oz_courses_btn oz_courses_btn_left goToPreviousTab">Previous</button>
+                    <button class="oz_courses_btn oz_courses_btn_right oz_courses_btn_secondary goToNextTab">Next</button>
+                </div>
+
+            </div>
+            <!------ END TABS -->
+
+        </div>
+
+    </div>
+    <!---- END MAIN WRAPPER ---->
+
+    <script src="./js/oz-courses-general-scripts.js"></script>
+    <script src="./js/oz-courses-tabs.js"></script>
+</body>
+</html>
