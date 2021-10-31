@@ -330,12 +330,13 @@ span.oz_courses_drop_cap {
     align-items: center;
     overflow-x: hidden;
     cursor: pointer;
+    height: 150px;
 }
 
 .category_left_icon {
-    width: 40px;
+    width: 70px;
     height: 100%;
-    font-size: 20px;
+    font-size: 50px;
 }
 
 .category_left_icon,
@@ -421,6 +422,10 @@ span.oz_courses_drop_cap {
 
 .oz_courses_step_2_course_card:hover {
     background-color: var(--secondary-color-lighter);
+}
+
+.oz_courses_step_2_course_cards.hide_cards .oz_courses_step_2_course_card:not(.selected) {
+    display: none;
 }
 
 .oz_courses_step_2_course_card.selected {

@@ -6,6 +6,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
     nodeListToArray(categoryCards).forEach(function(card) {
         card.addEventListener("click", function(e) {
+
+            // reset all cards initially
+            nodeListToArray(categoryCards).forEach(function(card) {
+                card.classList.remove("selected");
+            })
+
             if(card.classList.contains("selected")) {
                 card.classList.remove("selected");
             } else {
@@ -16,15 +22,25 @@ document.addEventListener("DOMContentLoaded", function() {
     /** END STEP 1 */
 
     /** STEP 2     */
+    const courseCardsWrapper = document.querySelector(".oz_courses_step_2_course_cards");
     const courseCards = document.querySelectorAll(".oz_courses_step_2_course_card");
 
-    nodeListToArray(courseCards).forEach(function(card) {
+    nodeListToArray(courseCards).forEach(function(card, index) {
         card.addEventListener("click", function(e) {
+
+            courseCardsWrapper.classList.add("hide_cards");
+
             if(card.classList.contains("selected")) {
                 card.classList.remove("selected");
+                courseCardsWrapper.classList.remove("hide_cards");
             } else {
                 card.classList.add("selected");
             }
+
+            // if(card === e.target) {
+            //     card.classList.add("hide");
+            // }
+
         })
     })
     /** END STEP 2 */

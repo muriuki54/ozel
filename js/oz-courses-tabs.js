@@ -6,10 +6,11 @@ document.addEventListener("DOMContentLoaded", function() {
     })
 
     function Tab(tab) {
-        this.startIndex = 0;
+        this.startIndex = 1;
         this.stepsProgressBar = tab.querySelector(".oz_courses_steps_progress_bar");
         this.stepButtons = tab.querySelectorAll(".oz_courses_step_button");
         this.innerTabsWrapper = tab.querySelector(".oz_courses_inner_tabs_wrapper");
+        this.courseCategoryCards = tab.querySelectorAll(".oz_courses_step_1_category_card"); // category cards
         this.goToPreviousTabControl = tab.querySelector(".oz_courses_tabs_direction_controls .goToPreviousTab");
         this.goToNextTabControl = tab.querySelector(".oz_courses_tabs_direction_controls .goToNextTab");
         this.size = tab.clientWidth;
@@ -58,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function() {
             self.translateX();
         })
 
-        this.goToNextTabControl .addEventListener("click", function(e) {
+        this.goToNextTabControl.addEventListener("click", function(e) {
             if(self.startIndex >= self.innerTabs.length - 1) {
                 e.target.classList.add("disable");
                 return;
@@ -80,6 +81,14 @@ document.addEventListener("DOMContentLoaded", function() {
                 self.goToNextTabControl.classList.remove("disable")
             }
         }
+
+        // GO TO NEXT WHEN CATEGORY CARD IS CLICKED
+        nodeListToArray(this.courseCategoryCards).forEach(function(card) {
+            card.addEventListener("click", function() {
+                self.startIndex = 1;
+                self.translateX();
+            })
+        })
 
         // LISTEN FOR WINDOW RESIZE
         window.addEventListener("resize", function() {
