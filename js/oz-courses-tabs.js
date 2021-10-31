@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
     })
 
     function Tab(tab) {
-        this.startIndex = 1;
+        this.startIndex = 0;
         this.stepsProgressBar = tab.querySelector(".oz_courses_steps_progress_bar");
         this.stepButtons = tab.querySelectorAll(".oz_courses_step_button");
         this.innerTabsWrapper = tab.querySelector(".oz_courses_inner_tabs_wrapper");
